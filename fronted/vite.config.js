@@ -7,4 +7,5 @@ export default defineConfig({
     outDir: 'build', // Set the output directory to "build"
     // ... other build options
   },
+  plugins: [react()],
 })
