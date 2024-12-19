@@ -12,7 +12,7 @@ const festividadesData = [
       text: "La fiesta de San Pedro en la caleta El Membrillo, con más de 100 años de tradición, se celebra cada mes de junio. Destacan las procesiones de San Pedro y la Virgen María, tanto por tierra como por mar, y la Eucaristía presidida por un obispo. La celebración incluye bailes chinos y la participación de autoridades locales.",
       img: SanPedroImg ,
       aosDelay: 300,
-    },
+    }, 
     {
       id: 2,
       title: "Fogata del Pescador",
