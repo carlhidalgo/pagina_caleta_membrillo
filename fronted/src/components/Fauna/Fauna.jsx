@@ -9,11 +9,11 @@ import PinguinoHumboldtImg from '../../assets/aves/pinguino_humboldt.png';
 import ChurreteCosteroAudio from '../../assets/aves/churrete_costero.mp3';
 import GaviotaFranklinAudio from '../../assets/aves/gaviota_franklin.mp3';
 import PinguinoHumboldtAudio from '../../assets/aves/pinguino_humboldt.mp3';
-import lobomarino from '../../assets/mamiferos-marinos/Lobomarino.png';
-import chungungo from '../../assets/mamiferos-marinos/Chungungo.png';
+import lobomarino from '../../assets/mamiferos-marinos/lobomarino.png';
+import chungungo from '../../assets/mamiferos-marinos/chungungo.png';
 import EstrellaDeMar from '../../assets/especies-marinas/estrellademar.png';
 import Cholga from '../../assets/especies-marinas/cholga.png';
-import Merluza from '../../assets/especies-marinas/merluza.png';
+import Merluza from '../../assets/especies-marinas/merluza.png'; 
 
 const faunaData = [
   {
