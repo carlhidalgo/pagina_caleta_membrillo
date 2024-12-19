@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/eslint-plugin": "",
     "@typescript-eslint/parser": "^5.62.0",
     "aos": "^2.3.4",
     "glob": "^11.0.0",
