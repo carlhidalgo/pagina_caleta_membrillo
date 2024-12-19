@@ -13,7 +13,7 @@ const Introduccion = () => {
       <div className="bg-white shadow-lg rounded-lg overflow-hidden">
         <h1
           ref={titleRef}
-          className={`text-4xl font-bold text-center text-gray-800 mb-4 p-4 bg-yellow-500 transition-opacity duration-1000 ${titleInView ? 'opacity-100' : 'opacity-0'}`}
+          data-aos="fade-up" className={`text-4xl font-bold text-center text-gray-800 mb-4 p-4 bg-yellow-500 transition-opacity duration-1000 ${titleInView ? 'opacity-100' : 'opacity-0'}`}
         >
           La Historia de la Caleta
         </h1>
@@ -22,11 +22,11 @@ const Introduccion = () => {
             ref={imageRef}
             src={CaletaImage}
             alt="La Caleta"
-            className={`w-full h-auto mb-4 rounded-lg shadow-md transition-opacity duration-1000 ${imageInView ? 'opacity-100' : 'opacity-0'}`}
+            data-aos="zoom-in" className={`w-full h-auto mb-4 rounded-lg shadow-md transition-opacity duration-1000 ${imageInView ? 'opacity-100' : 'opacity-0'}`}
           />
           <p
             ref={paragraphRef}
-            className={`text-lg text-justify text-gray-700 transition-opacity duration-1000 ${paragraphInView ? 'opacity-100' : 'opacity-0'}`}
+            data-aos="fade-up" data-aos-delay="400" className={` text-lg text-justify text-gray-700 transition-opacity duration-1000 ${paragraphInView ? 'opacity-100' : 'opacity-0'}`}
           >
             La Caleta es un lugar lleno de historia y tradición. Desde tiempos inmemoriales, ha sido un punto de encuentro para pescadores y viajeros. Sus aguas cristalinas y su entorno natural han sido testigos de innumerables historias y leyendas que se han transmitido de generación en generación. Hoy en día, La Caleta sigue siendo un lugar emblemático, donde la historia y la modernidad se entrelazan para ofrecer a sus visitantes una experiencia única.
           </p>

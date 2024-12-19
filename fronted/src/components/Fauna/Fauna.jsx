@@ -94,34 +94,38 @@ const Fauna = () => {
   return (
     <>
       <div className="py-10">
+      <h2 className="text-4xl font-bold text-center text-gray-800 mb-4 p-4 bg-yellow-500 transition-opacity duration-1000 ${titleInView ? 'opacity-100' : 'opacity-0'}"
+        >
+          La fauna
+        </h2>
         <div className="container"> {/* fauna section */}
-        <div className="grid grid-cols-1 max-w-screen-xl
+        <div data-aos="fade-up" className="grid grid-cols-1 max-w-screen-xl
     mx-auto gap-6">
          <Slider {...settings}>   
         {faunaData.map(({ id, title, text, img, audio }) => (
-            <div key={id} className="mb-8">
+            <div key={id} className="my-6">
                 <div className="flex flex-col sm:flex-row
                 gap-5 md:gap14 p-4 mx-4 rounded-xl
                 bg-orange-300 relative" >
                     <img 
                     src={img} alt={title} 
-                    className="block mx-auto h-[200px] w-full
-                    sm:w-[200px] object-cover"
+                    className="block mx-auto h-[300px] w-full
+                    sm:w-[400px] object-cover"
                     />
-                </div>
-            <div className="space-y-4">
-                <h3 className="text-xl font-bold ">{title}</h3>
-                <p className="text-green-800 text-justify mb-4">{text}</p>
-            </div>
-            {audio && (
-                            <audio controls className="mt-4">
-                                <source src={audio} type="audio/mpeg" />
-                                Your browser does not support the audio element.
-                            </audio>
-                        )}
-            
-            </div>
-        ))}
+                    
+                    <div className="space-y-4">
+                    <h3 className="text-xl font-bold">{title}</h3>
+                    <p className="text-green-800 text-justify mb-4">{text}</p>
+                    {audio && (
+                      <audio controls className="w-full mt-4">
+                        <source src={audio} type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                      </audio>
+                    )}
+                  </div>
+                    </div>
+                    </div>
+            ))}
         </Slider>
     </div>
           

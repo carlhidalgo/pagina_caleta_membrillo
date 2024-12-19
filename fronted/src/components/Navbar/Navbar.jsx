@@ -5,10 +5,12 @@ import ResponsiveMenu from './ResponsiveMenu';
 
 
 export const Menulinks = [
-  { name: "Inicio", url: "/" },
-  { name: "Acerca de", url: "/about" },
-  { name: "actividades", url: "/activities" }
-];
+    { name: "Inicio", url: "#hero" },
+    { name: "Acerca de", url: "#introduccion" },
+    { name: "Fauna", url: "#fauna" },
+    { name: "Actividades", url: "#festividades" }
+ 
+  ];
 
 export const Navbar = () => {
     const [showMenu, setShowMenu] = React.useState(false);
@@ -18,7 +20,7 @@ export const Navbar = () => {
     };
   return(
    <>
-        <nav>
+        <nav id="inicio" >
 
             <div>
 
@@ -36,11 +38,11 @@ export const Navbar = () => {
                     {/* desktop Navlinks Section */}
                     <div className="hidden md:block">
                         <ul className="flex items-center gap-8">
-                            {Menulinks.map(({id, name, link}) => {
+                            {Menulinks.map(({id, name, url}) => {
                                     return (
                                         <li key={id}
                                         className="cursor-pointer py-4">
-                                            <a href="#" className=" text-lg font-medium
+                                            <a href={url}  className=" text-lg font-medium
                                             hover:text-primary py-2
                                             hover:border-b-2 
                                             hover;border-primary transition-all 
